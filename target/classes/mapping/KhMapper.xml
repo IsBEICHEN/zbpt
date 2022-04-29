@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.project.mapper.KhMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.project.domain.Kh" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="kname" property="kname" jdbcType="VARCHAR" />
+    <result column="bianhao" property="bianhao" jdbcType="VARCHAR" />
+    <result column="lxr" property="lxr" jdbcType="VARCHAR" />
+    <result column="dz" property="dz" jdbcType="VARCHAR" />
+    <result column="khjb" property="khjb" jdbcType="VARCHAR" />
+    <result column="khly" property="khly" jdbcType="VARCHAR" />
+    <result column="lname" property="lname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, kname, bianhao, lxr, dz, khjb, khly, lname
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from kh
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="select" resultMap="BaseResultMap" parameterType="cn.com.project.domain.Kh" >
+    select 
+    <include refid="Base_Column_List" />
+    from kh
+  	<where>
+  		<if test="kname !=null and kname !='' ">
+  			kname = #{kname}
+  		</if>
+  		<if test="lname !=null and lname !='' ">
+  			lname = #{lname}
+  		</if>
+  	</where>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from kh
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.com.project.domain.Kh" >
+    insert into kh (id, kname, bianhao, 
+      lxr, dz, khjb, khly, 
+      lname)
+    values (#{id,jdbcType=INTEGER}, #{kname,jdbcType=VARCHAR}, #{bianhao,jdbcType=VARCHAR}, 
+      #{lxr,jdbcType=VARCHAR}, #{dz,jdbcType=VARCHAR}, #{khjb,jdbcType=VARCHAR}, #{khly,jdbcType=VARCHAR}, 
+      #{lname,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.com.project.domain.Kh" >
+    insert into kh
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="kname != null" >
+        kname,
+      </if>
+      <if test="bianhao != null" >
+        bianhao,
+      </if>
+      <if test="lxr != null" >
+        lxr,
+      </if>
+      <if test="dz != null" >
+        dz,
+      </if>
+      <if test="khjb != null" >
+        khjb,
+      </if>
+      <if test="khly != null" >
+        khly,
+      </if>
+      <if test="lname != null" >
+        lname,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="kname != null" >
+        #{kname,jdbcType=VARCHAR},
+      </if>
+      <if test="bianhao != null" >
+        #{bianhao,jdbcType=VARCHAR},
+      </if>
+      <if test="lxr != null" >
+        #{lxr,jdbcType=VARCHAR},
+      </if>
+      <if test="dz != null" >
+        #{dz,jdbcType=VARCHAR},
+      </if>
+      <if test="khjb != null" >
+        #{khjb,jdbcType=VARCHAR},
+      </if>
+      <if test="khly != null" >
+        #{khly,jdbcType=VARCHAR},
+      </if>
+      <if test="lname != null" >
+        #{lname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.com.project.domain.Kh" >
+    update kh
+    <set >
+      <if test="kname != null" >
+        kname = #{kname,jdbcType=VARCHAR},
+      </if>
+      <if test="bianhao != null" >
+        bianhao = #{bianhao,jdbcType=VARCHAR},
+      </if>
+      <if test="lxr != null" >
+        lxr = #{lxr,jdbcType=VARCHAR},
+      </if>
+      <if test="dz != null" >
+        dz = #{dz,jdbcType=VARCHAR},
+      </if>
+      <if test="khjb != null" >
+        khjb = #{khjb,jdbcType=VARCHAR},
+      </if>
+      <if test="khly != null" >
+        khly = #{khly,jdbcType=VARCHAR},
+      </if>
+      <if test="lname != null" >
+        lname = #{lname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.com.project.domain.Kh" >
+    update kh
+    set kname = #{kname,jdbcType=VARCHAR},
+      bianhao = #{bianhao,jdbcType=VARCHAR},
+      lxr = #{lxr,jdbcType=VARCHAR},
+      dz = #{dz,jdbcType=VARCHAR},
+      khjb = #{khjb,jdbcType=VARCHAR},
+      khly = #{khly,jdbcType=VARCHAR},
+      lname = #{lname,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

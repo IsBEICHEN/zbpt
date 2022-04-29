@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.project.mapper.TaskMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.project.domain.Task" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="kname" property="kname" jdbcType="VARCHAR" />
+    <result column="a_id" property="aId" jdbcType="INTEGER" />
+    <result column="keshi" property="keshi" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="xuefen" property="xuefen" jdbcType="VARCHAR" />
+    <result column="account" property="account" jdbcType="VARCHAR" />
+    <result column="zl" property="zl" jdbcType="VARCHAR" />
+    <result column="wz" property="wz" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    c.id, c.kname, c.a_id, c.keshi, c.content, c.xuefen, a.account,c.zl,c.wz,c.state,c.type
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from task c
+    left join admin a
+    on c.a_id = a.id
+    where c.id = #{id,jdbcType=INTEGER}
+  </select>
+   <select id="select" resultMap="BaseResultMap" parameterType="cn.com.project.domain.Task" >
+    select 
+    <include refid="Base_Column_List" />
+    from task c
+    left join admin a
+    on c.a_id = a.id
+    <where>
+           <if test="kname !=null and kname !=''">
+            and c.kname=#{kname}
+           </if>
+           <if test="aId !=null and aId !=''">
+            and c.a_id=#{aId}
+           </if>
+      </where>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from task
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.com.project.domain.Task" >
+    insert into task (id, kname, a_id, 
+      keshi, content, xuefen
+      )
+    values (#{id,jdbcType=INTEGER}, #{kname,jdbcType=VARCHAR}, #{aId,jdbcType=INTEGER}, 
+      #{keshi,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{xuefen,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.com.project.domain.Task" >
+    insert into task
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="kname != null" >
+        kname,
+      </if>
+      <if test="aId != null" >
+        a_id,
+      </if>
+      <if test="keshi != null" >
+        keshi,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="xuefen != null" >
+        xuefen,
+      </if>
+      <if test="wz != null" >
+        wz,
+      </if>
+      <if test="zl != null" >
+        zl,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+       <if test="type != null" >
+        type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="kname != null" >
+        #{kname,jdbcType=VARCHAR},
+      </if>
+      <if test="aId != null" >
+        #{aId,jdbcType=INTEGER},
+      </if>
+      <if test="keshi != null" >
+        #{keshi,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="xuefen != null" >
+        #{xuefen,jdbcType=VARCHAR},
+      </if>
+       <if test="wz != null" >
+        #{wz,jdbcType=VARCHAR},
+      </if>
+       <if test="zl != null" >
+        #{zl,jdbcType=VARCHAR},
+      </if>
+       <if test="state != null" >
+        #{state,jdbcType=VARCHAR},
+      </if>
+       <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.com.project.domain.Task" >
+    update task
+    <set >
+      <if test="kname != null" >
+        kname = #{kname,jdbcType=VARCHAR},
+      </if>
+      <if test="aId != null" >
+        a_id = #{aId,jdbcType=INTEGER},
+      </if>
+      <if test="keshi != null" >
+        keshi = #{keshi,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="xuefen != null" >
+        xuefen = #{xuefen,jdbcType=VARCHAR},
+      </if>
+      <if test="wz != null" >
+        wz = #{wz,jdbcType=VARCHAR},
+      </if>
+      <if test="zl != null" >
+        zl = #{zl,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.com.project.domain.Task" >
+    update task
+    set kname = #{kname,jdbcType=VARCHAR},
+      a_id = #{aId,jdbcType=INTEGER},
+      keshi = #{keshi,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      xuefen = #{xuefen,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

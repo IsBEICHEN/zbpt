@@ -1,0 +1,204 @@
+2022-04-24 15:51:47:938 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh from admin where account = ? AND password=? 
+2022-04-24 15:51:47:951 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==> Parameters: admin(String), 1(String)
+2022-04-24 15:51:47:966 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:28:689 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:28:690 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 1(String)
+2022-04-24 16:09:28:691 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:28:693 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:28:693 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 1(String), 10(Integer)
+2022-04-24 16:09:28:726 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 2
+2022-04-24 16:09:29:702 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:29:703 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:29:704 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:29:705 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:29:705 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:29:707 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:30:614 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:30:614 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 1(String)
+2022-04-24 16:09:30:616 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:30:617 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:30:617 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 1(String), 10(Integer)
+2022-04-24 16:09:30:626 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 2
+2022-04-24 16:09:31:439 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:31:440 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:31:441 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:31:442 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:31:442 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:31:444 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:32:323 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:32:324 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:32:325 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:32:325 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:32:326 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:32:328 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:32:857 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:32:858 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:32:859 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:32:859 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:32:860 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:32:862 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:33:410 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:33:410 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:33:411 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:33:413 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:33:413 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:33:416 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:33:899 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:33:899 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:33:901 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:33:903 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:33:903 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:33:905 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:34:444 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:34:445 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:34:446 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:34:446 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:34:447 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:34:449 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:35:111 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM kh 
+2022-04-24 16:09:35:111 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 16:09:35:113 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:35:114 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==>  Preparing: select id, kname, bianhao, lxr, dz, khjb, khly, lname from kh LIMIT ? 
+2022-04-24 16:09:35:114 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 16:09:35:116 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] <==      Total: 4
+2022-04-24 16:09:39:966 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM kh 
+2022-04-24 16:09:39:966 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 16:09:39:969 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:39:970 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==>  Preparing: select id, kname, bianhao, lxr, dz, khjb, khly, lname from kh LIMIT ? 
+2022-04-24 16:09:39:970 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 16:09:39:971 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] <==      Total: 4
+2022-04-24 16:09:40:123 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM kh 
+2022-04-24 16:09:40:123 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 16:09:40:125 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:40:126 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==>  Preparing: select id, kname, bianhao, lxr, dz, khjb, khly, lname from kh LIMIT ? 
+2022-04-24 16:09:40:126 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 16:09:40:127 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] <==      Total: 4
+2022-04-24 16:09:40:471 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM kh 
+2022-04-24 16:09:40:472 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 16:09:40:473 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:40:474 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==>  Preparing: select id, kname, bianhao, lxr, dz, khjb, khly, lname from kh LIMIT ? 
+2022-04-24 16:09:40:474 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 16:09:40:477 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] <==      Total: 4
+2022-04-24 16:09:40:762 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:40:763 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:40:764 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:40:765 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:40:765 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:40:767 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:40:916 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:40:917 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:40:917 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:40:918 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:40:918 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:40:920 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:41:224 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:41:224 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:41:225 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:41:226 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:41:226 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:41:228 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:41:652 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM kh 
+2022-04-24 16:09:41:652 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 16:09:41:654 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:41:655 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==>  Preparing: select id, kname, bianhao, lxr, dz, khjb, khly, lname from kh LIMIT ? 
+2022-04-24 16:09:41:655 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 16:09:41:656 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] <==      Total: 4
+2022-04-24 16:09:41:802 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM kh 
+2022-04-24 16:09:41:802 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 16:09:41:804 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:41:805 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==>  Preparing: select id, kname, bianhao, lxr, dz, khjb, khly, lname from kh LIMIT ? 
+2022-04-24 16:09:41:806 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 16:09:41:807 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] <==      Total: 4
+2022-04-24 16:09:41:953 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM kh 
+2022-04-24 16:09:41:954 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 16:09:41:955 [cn.com.project.mapper.KhMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:41:956 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==>  Preparing: select id, kname, bianhao, lxr, dz, khjb, khly, lname from kh LIMIT ? 
+2022-04-24 16:09:41:956 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 16:09:41:958 [cn.com.project.mapper.KhMapper.select:159]-[DEBUG] <==      Total: 4
+2022-04-24 16:09:42:497 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:42:497 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:42:498 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:42:499 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:42:499 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:42:502 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:42:647 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 16:09:42:647 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 2(String)
+2022-04-24 16:09:42:648 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:09:42:649 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 16:09:42:649 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 2(String), 10(Integer)
+2022-04-24 16:09:42:652 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 1
+2022-04-24 16:10:09:828 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh from admin where account = ? AND password=? 
+2022-04-24 16:10:09:829 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==> Parameters: admin(String), 1(String)
+2022-04-24 16:10:09:830 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] <==      Total: 1
+2022-04-24 18:57:23:573 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM task c LEFT JOIN admin a ON c.a_id = a.id 
+2022-04-24 18:57:23:573 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 18:57:23:575 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 18:57:23:576 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] ==>  Preparing: select c.id, c.kname, c.a_id, c.keshi, c.content, c.xuefen, a.account,c.zl,c.wz,c.state,c.type from task c left join admin a on c.a_id = a.id LIMIT ? 
+2022-04-24 18:57:23:576 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 18:57:23:577 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] <==      Total: 3
+2022-04-24 18:57:25:972 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh from admin where account = ? AND password=? 
+2022-04-24 18:57:25:972 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==> Parameters: admin(String), 1(String)
+2022-04-24 18:57:25:973 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] <==      Total: 1
+2022-04-24 18:57:27:777 [cn.com.project.mapper.GradeMapper.selectGraList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM grade g LEFT JOIN admin a ON g.a_id = a.id LEFT JOIN task c ON g.c_id = c.id 
+2022-04-24 18:57:27:778 [cn.com.project.mapper.GradeMapper.selectGraList_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 18:57:27:779 [cn.com.project.mapper.GradeMapper.selectGraList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 18:57:27:779 [cn.com.project.mapper.GradeMapper.selectGraList:159]-[DEBUG] ==>  Preparing: select g.id, g.c_id, g.d_id, g.xueqi, g.fenshu, g.content, g.a_id,c.kname,a.account from grade g left join admin a on g.a_id = a.id left join task c on g.c_id = c.id LIMIT ? 
+2022-04-24 18:57:27:780 [cn.com.project.mapper.GradeMapper.selectGraList:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 18:57:27:780 [cn.com.project.mapper.GradeMapper.selectGraList:159]-[DEBUG] <==      Total: 3
+2022-04-24 19:05:21:458 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM task c LEFT JOIN admin a ON c.a_id = a.id 
+2022-04-24 19:05:21:459 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 19:05:21:460 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:05:21:460 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] ==>  Preparing: select c.id, c.kname, c.a_id, c.keshi, c.content, c.xuefen, a.account,c.zl,c.wz,c.state,c.type from task c left join admin a on c.a_id = a.id LIMIT ? 
+2022-04-24 19:05:21:461 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 19:05:21:461 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] <==      Total: 3
+2022-04-24 19:05:24:073 [cn.com.project.mapper.XuankeMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM xuanke x LEFT JOIN task c ON x.s_id = c.id LEFT JOIN admin a ON c.a_id = a.id 
+2022-04-24 19:05:24:073 [cn.com.project.mapper.XuankeMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 19:05:24:075 [cn.com.project.mapper.XuankeMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:05:24:076 [cn.com.project.mapper.XuankeMapper.select:159]-[DEBUG] ==>  Preparing: select x.id,c.keshi, c.xuefen,c.kname,a.account,x.bdate,x.state,x.name,x.s_id,x.a_id from xuanke x left join task c on x.s_id = c.id left join admin a on c.a_id = a.id LIMIT ? 
+2022-04-24 19:05:24:076 [cn.com.project.mapper.XuankeMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 19:05:24:077 [cn.com.project.mapper.XuankeMapper.select:159]-[DEBUG] <==      Total: 3
+2022-04-24 19:05:26:617 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM task c LEFT JOIN admin a ON c.a_id = a.id 
+2022-04-24 19:05:26:617 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 19:05:26:618 [cn.com.project.mapper.TaskMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:05:26:619 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] ==>  Preparing: select c.id, c.kname, c.a_id, c.keshi, c.content, c.xuefen, a.account,c.zl,c.wz,c.state,c.type from task c left join admin a on c.a_id = a.id LIMIT ? 
+2022-04-24 19:05:26:619 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 19:05:26:620 [cn.com.project.mapper.TaskMapper.select:159]-[DEBUG] <==      Total: 3
+2022-04-24 19:05:33:209 [cn.com.project.mapper.TaskMapper.selectByPrimaryKey:159]-[DEBUG] ==>  Preparing: select c.id, c.kname, c.a_id, c.keshi, c.content, c.xuefen, a.account,c.zl,c.wz,c.state,c.type from task c left join admin a on c.a_id = a.id where c.id = ? 
+2022-04-24 19:05:33:209 [cn.com.project.mapper.TaskMapper.selectByPrimaryKey:159]-[DEBUG] ==> Parameters: 6(Integer)
+2022-04-24 19:05:33:210 [cn.com.project.mapper.TaskMapper.selectByPrimaryKey:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:05:33:211 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? 
+2022-04-24 19:05:33:211 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 1(String)
+2022-04-24 19:05:33:219 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 2
+2022-04-24 19:05:37:154 [cn.com.project.mapper.XuankeMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM xuanke x LEFT JOIN task c ON x.s_id = c.id LEFT JOIN admin a ON c.a_id = a.id 
+2022-04-24 19:05:37:154 [cn.com.project.mapper.XuankeMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 19:05:37:155 [cn.com.project.mapper.XuankeMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:05:37:156 [cn.com.project.mapper.XuankeMapper.select:159]-[DEBUG] ==>  Preparing: select x.id,c.keshi, c.xuefen,c.kname,a.account,x.bdate,x.state,x.name,x.s_id,x.a_id from xuanke x left join task c on x.s_id = c.id left join admin a on c.a_id = a.id LIMIT ? 
+2022-04-24 19:05:37:156 [cn.com.project.mapper.XuankeMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 19:05:37:157 [cn.com.project.mapper.XuankeMapper.select:159]-[DEBUG] <==      Total: 3
+2022-04-24 19:05:41:630 [cn.com.project.mapper.LeibieMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM leibie l LEFT JOIN admin a ON l.u_id = a.id 
+2022-04-24 19:05:41:631 [cn.com.project.mapper.LeibieMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 19:05:41:632 [cn.com.project.mapper.LeibieMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:05:41:632 [cn.com.project.mapper.LeibieMapper.select:159]-[DEBUG] ==>  Preparing: select l.id, l.lname, l.content, l.u_id, l.state, l.shyj,a.account from leibie l left join admin a on l.u_id = a.id LIMIT ? 
+2022-04-24 19:05:41:632 [cn.com.project.mapper.LeibieMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 19:05:41:634 [cn.com.project.mapper.LeibieMapper.select:159]-[DEBUG] <==      Total: 2
+2022-04-24 19:05:45:402 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 19:05:45:402 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 1(String)
+2022-04-24 19:05:45:403 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:05:45:404 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 19:05:45:404 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 1(String), 10(Integer)
+2022-04-24 19:05:45:412 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 2
+2022-04-24 19:13:28:463 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh from admin where account = ? AND password=? 
+2022-04-24 19:13:28:464 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] ==> Parameters: admin(String), 1(String)
+2022-04-24 19:13:28:465 [cn.com.project.mapper.UserMapper.login:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:13:30:608 [cn.com.project.mapper.LeibieMapper.select_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM leibie l LEFT JOIN admin a ON l.u_id = a.id 
+2022-04-24 19:13:30:609 [cn.com.project.mapper.LeibieMapper.select_COUNT:159]-[DEBUG] ==> Parameters: 
+2022-04-24 19:13:30:610 [cn.com.project.mapper.LeibieMapper.select_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:13:30:610 [cn.com.project.mapper.LeibieMapper.select:159]-[DEBUG] ==>  Preparing: select l.id, l.lname, l.content, l.u_id, l.state, l.shyj,a.account from leibie l left join admin a on l.u_id = a.id LIMIT ? 
+2022-04-24 19:13:30:610 [cn.com.project.mapper.LeibieMapper.select:159]-[DEBUG] ==> Parameters: 10(Integer)
+2022-04-24 19:13:30:611 [cn.com.project.mapper.LeibieMapper.select:159]-[DEBUG] <==      Total: 2
+2022-04-24 19:13:31:986 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==>  Preparing: SELECT count(0) FROM admin WHERE role = ? 
+2022-04-24 19:13:31:987 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] ==> Parameters: 1(String)
+2022-04-24 19:13:31:988 [cn.com.project.mapper.UserMapper.selectUserList_COUNT:159]-[DEBUG] <==      Total: 1
+2022-04-24 19:13:31:989 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==>  Preparing: select id, account, password, age, role, address, tel, chexing, jsnumber, idk, state,wh , photo from admin WHERE role=? LIMIT ? 
+2022-04-24 19:13:31:990 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] ==> Parameters: 1(String), 10(Integer)
+2022-04-24 19:13:31:997 [cn.com.project.mapper.UserMapper.selectUserList:159]-[DEBUG] <==      Total: 2
